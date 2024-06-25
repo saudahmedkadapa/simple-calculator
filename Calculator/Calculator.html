@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script src="./cal.js"></script>
+
+</head>
+
+<body>
+    <script>
+        var today = new Date();
+        document.getElementById("time").innerHTML = today;
+        <p id="time"></p>
+    </script>
+    <img src="./png-clipart-calculator-calculator-electronics-cartoon.png" height="250" width="250">
+    <marquee direction="left">Calculator <br>
+       
+    </marquee>
+    <form>
+        number 1:<input type="number" id="num1" placeholder="Enter first number">
+        <br>
+        number 2:<input type="number" id="num2" placeholder="enter Second number">
+        <br>
+        <br>
+        <button onclick="addition()">Addition</button>
+        <br>
+        <button onclick="substraction()">substraction</button>
+        <br>
+        <button onclick="Multilication()">Multilication</button>
+        <br>
+        <button onclick="Division()">Division</button>
+        <output id="op"></output>
+    </form>
+</body>
+
+</html>
